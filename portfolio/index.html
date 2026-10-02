@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio, Dan Baroody</title>
+  <meta name="description" content="Problems people had, and what Dan Baroody made to solve each one.">
+  <link rel="preload" href="../fonts/caprasimo-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="stylesheet" href="../css/site.css">
+  <script src="../js/theme.js"></script>
+  <script src="../js/accordion.js" defer></script>
+  <script src="../js/analytics.js" data-privacy="../privacy.html"></script>
+</head>
+<body class="page-portfolio">
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="wrap site-head">
+    <a class="name" href="../index.html">Dan Baroody</a>
+    <nav aria-label="Primary">
+      <a class="nav-portfolio" href="../portfolio/index.html" aria-current="page">Portfolio</a>
+      <a class="nav-tools" href="../tools/index.html">Tools</a>
+      <a class="nav-resume" href="../resume/index.html">Resume</a>
+      <button class="theme-toggle" type="button" aria-label="Switch theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.2 5.2l1.8 1.8M17 17l1.8 1.8M5.2 18.8 7 17M17 7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="theme-word">Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="wrap page-head">
+      <h1>Portfolio</h1>
+      <p>Each line is a problem someone had. Open it to see what I made.</p>
+      <p class="note">Client names and figures in the Salient screens are placeholders.</p>
+    </section>
+
+    <section class="wrap solutions" id="solutions" aria-label="Problems and solutions">
+      <div class="fix-cols" aria-hidden="true">
+        <span>Problem</span><span>Solution</span><span>Where</span>
+      </div>
+      <details class="fix" open>
+        <summary>
+          <span class="fix-problem">One company website has to speak to six different industries.</span>
+          <span class="fix-solution">Fieldline website concept</span>
+          <span class="fix-where">Concept</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>A 15-page marketing site for a fictional business-performance software company: home, six industry pages, customers, how we work, careers, a resource guide, blog and contact. Hand-built in HTML, CSS and JavaScript, with shared templates so the header, menu and footer stay identical on every page.</p>
+            <ul class="links"><li><a href="https://hazard224.github.io/fieldline-concept/">View the concept</a></li><li><a href="https://github.com/hazard224/fieldline-concept">Source on GitHub</a></li></ul>
+          </div>
+          <div class="fix-media"><div class="gallery"><figure class="shot tall"><img src="../images/concept-site/home.webp" srcset="../images/concept-site/home@2x.webp 2x" width="1440" height="2880" loading="lazy" alt="Fieldline home page: the headline Every result has a reason, we make sure you find it, followed by stats, partner logos and industry sections."></figure><figure class="shot"><img src="../images/concept-site/retail.webp" srcset="../images/concept-site/retail@2x.webp 2x" width="1440" height="900" loading="lazy" alt="Retail, grocery and convenience industry page with the headline Performance is decided beyond the shelf."></figure><figure class="shot"><img src="../images/concept-site/how-we-work.webp" srcset="../images/concept-site/how-we-work@2x.webp 2x" width="1440" height="900" loading="lazy" alt="How we work page with the headline There is a better way to manage business performance."></figure></div></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Analysts compare three time periods across a dozen columns, and the grid still has to read at a glance.</span>
+          <span class="fix-solution">Explore view</span>
+          <span class="fix-where">Salient</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>A comparison grid beside a toolkit panel. Cube, time periods, drill path and measures are set on the left; the grid on the right stays scannable with every comparison on screen.</p>
+          </div>
+          <div class="fix-media"><figure class="shot"><img src="../images/salient/explore.webp" srcset="../images/salient/explore@2x.webp 2x" width="1440" height="900" loading="lazy" alt="Explore view: a sales grid comparing last week, last four weeks and year to date against a year ago, with a toolkit panel for drill path and measures."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Nobody could find a dashboard unless they knew who saved it and where.</span>
+          <span class="fix-solution">Directory redesign</span>
+          <span class="fix-where">Salient</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Search comes first. Bookmarks and dashboards are separated, and people choose how much detail each card shows.</p>
+          </div>
+          <div class="fix-media"><figure class="shot"><img src="../images/salient/directory.webp" srcset="../images/salient/directory@2x.webp 2x" width="1440" height="900" loading="lazy" alt="Directory dialog: folder tree on the left, search across the top, and a grid of dashboard and bookmark cards."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Every setup dialog worked a little differently, so people had to relearn each one.</span>
+          <span class="fix-solution">Configure dialog</span>
+          <span class="fix-where">Salient</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Group by, measures, date ranges, filters and options in one dialog with one shared pattern: available on the left, selected on the right.</p>
+          </div>
+          <div class="fix-media"><figure class="shot"><img src="../images/salient/configure-dialog.webp" srcset="../images/salient/configure-dialog@2x.webp 2x" width="960" height="660" loading="lazy" alt="Configure dialog with tabs for Group By, Measures, Date Ranges, Filters, Options and Summary, and available and selected lists side by side."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Developers were guessing at colors, spacing and button states.</span>
+          <span class="fix-solution">Design system</span>
+          <span class="fix-where">Salient</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Color, type, buttons, form controls and a single-weight icon set, documented so new screens get built the same way every time.</p>
+          </div>
+          <div class="fix-media"><div class="gallery"><figure class="shot tall"><img src="../images/salient/style-guide.webp" srcset="../images/salient/style-guide@2x.webp 2x" width="1440" height="1500" loading="lazy" alt="Style guide overview: key design decisions and the full color system."></figure><figure class="shot"><img src="../images/salient/ds-buttons.webp" srcset="../images/salient/ds-buttons@2x.webp 2x" width="1440" height="484" loading="lazy" alt="Button specification: primary, action, add, cancel and danger buttons in default, hover and disabled states."></figure><figure class="shot half"><img src="../images/salient/ds-calendar.webp" srcset="../images/salient/ds-calendar@2x.webp 2x" width="580" height="780" loading="lazy" alt="Calendar component: a single month picker and a two-panel date range picker."></figure><figure class="shot"><img src="../images/salient/ds-colors.webp" srcset="../images/salient/ds-colors@2x.webp 2x" width="1440" height="261" loading="lazy" alt="Brand color swatches with hex values and token names."></figure><figure class="shot"><img src="../images/salient/ds-icons.webp" srcset="../images/salient/ds-icons@2x.webp 2x" width="1440" height="510" loading="lazy" alt="The product icon set: about 150 single-weight line icons."></figure></div></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Sometimes creativity needs a spark.</span>
+          <span class="fix-solution">Creative Spark</span>
+          <span class="fix-where">dodill</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Two random words, and a refresh button for more. Use them to start a story, a sketch, a poem or a conversation. The only rule is to make something that's yours.</p>
+            <ul class="links"><li><a href="https://www.dodill.com/Prompt-maker/creative-spark.html">Try it</a></li></ul>
+          </div>
+          <div class="fix-media"><figure class="shot"><img src="../images/dodill/creative-spark.webp" srcset="../images/dodill/creative-spark@2x.webp 2x" width="1440" height="900" loading="lazy" alt="Creative Spark: the words well-groomed and drawer in large white type on a purple background, with a refresh button below."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Transferring a reference image to a canvas at the right size.</span>
+          <span class="fix-solution">Image Grid Tool</span>
+          <span class="fix-where">dodill</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Upload an image, set the canvas size in inches and DPI, position the image, then lay a grid over it with your own rows, columns, line color and weight. Save the result and print it.</p>
+            <ul class="links"><li><a href="https://www.dodill.com/Image-grid/image-grid.html">Try it</a></li></ul>
+          </div>
+          <div class="fix-media"><figure class="shot tall"><img src="../images/dodill/image-grid.webp" srcset="../images/dodill/image-grid@2x.webp 2x" width="1440" height="1662" loading="lazy" alt="Image Grid Tool: canvas, image size, position, grid layout and grid appearance controls above a photo of a produce market divided by a white four by five grid."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">Pulling a usable color palette out of an image.</span>
+          <span class="fix-solution">Color Palette Maker</span>
+          <span class="fix-where">dodill</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Generate a palette at random or extract one from an uploaded image. Lock the colors you like, regenerate the rest, and export in HEX, RGB or HSL.</p>
+            <ul class="links"><li><a href="https://www.dodill.com/Color-palette/palette-maker.html">Try it</a></li></ul>
+          </div>
+          <div class="fix-media"><figure class="shot"><img src="../images/dodill/palette-maker.webp" srcset="../images/dodill/palette-maker@2x.webp 2x" width="1440" height="900" loading="lazy" alt="Color Palette Maker: a produce market photo beside five extracted swatches, from olive and mustard to peach, red and dark brown, each with HEX and RGB values."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">A college with no presence on social media.</span>
+          <span class="fix-solution">Founded every social channel</span>
+          <span class="fix-where">Elmira College</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Created the college's first Facebook, Twitter, YouTube and Instagram accounts, and set the content and goals for each.</p>
+            
+          </div>
+          <div class="fix-media"><figure class="stack"><img src="../images/elmira/social-stack.webp" srcset="../images/elmira/social-stack@2x.webp 2x" width="944" height="738" loading="lazy" alt="Elmira College's YouTube, Facebook and Instagram pages, fanned out in a stack."></figure></div>
+        </div>
+      </details>
+      <details class="fix">
+        <summary>
+          <span class="fix-problem">A college website that wasn't working for prospective students.</span>
+          <span class="fix-solution">Website redesign</span>
+          <span class="fix-where">Elmira College</span>
+        </summary>
+        <div class="fix-body">
+          <div class="fix-text">
+            <p>Led the full redesign of the college website.</p>
+            
+          </div>
+          <div class="fix-media"><figure class="stack"><img src="../images/elmira/website-card.webp" srcset="../images/elmira/website-card@2x.webp 2x" width="690" height="540" loading="lazy" alt="The redesigned Elmira College home page: purple and gold navigation, a Summer Open House photo slider, and news and events below."></figure></div>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap site-foot">
+    <ul class="foot-links">
+      <li><a href="mailto:dabaroody@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/danbaroody" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/hazard224">GitHub</a></li>
+      <li><a href="../resume/index.html">Resume</a></li>
+    </ul>
+    <p><a href="../privacy.html">Privacy</a></p>
+  </footer>
+</body>
+</html>
