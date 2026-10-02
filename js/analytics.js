@@ -26,8 +26,8 @@
     b.setAttribute('aria-label', 'Cookie consent');
     b.innerHTML =
       '<p>This site uses Google Analytics to see which pages get used. <a href="' + privacyHref + '">Privacy policy</a></p>' +
-      '<div class="consent-actions"><button type="button" data-v="accepted">Accept</button>' +
-      '<button type="button" data-v="declined">Decline</button></div>';
+      '<div class="consent-actions"><button type="button" class="btn btn-primary" data-v="accepted">Accept</button>' +
+      '<button type="button" class="btn" data-v="declined">Decline</button></div>';
     b.addEventListener('click', function (e) {
       var v = e.target.getAttribute && e.target.getAttribute('data-v');
       if (!v) return;
