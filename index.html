@@ -5,11 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dan Baroody, Problem Solver</title>
   <meta name="description" content="Dan Baroody, problem solver. Solving problems is his love language and his passion. Portfolio, tools and resume. Elmira, New York.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dan Baroody">
+  <meta property="og:title" content="Dan Baroody, Problem Solver">
+  <meta property="og:description" content="Dan Baroody, problem solver. Solving problems is his love language and his passion. Portfolio, tools and resume. Elmira, New York.">
+  <meta property="og:url" content="https://www.dodill.com/">
+  <meta property="og:image" content="https://www.dodill.com/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="fonts/caprasimo-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <link rel="stylesheet" href="css/site.css">
   <script src="js/theme.js"></script>
   <script src="js/accordion.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/sort.js" defer></script>
   <script src="js/analytics.js" data-privacy="privacy.html"></script>
 </head>
 <body class="page-home">
@@ -38,20 +52,57 @@
       </p>
     </section>
 
-    <section class="wrap home-doors" aria-label="Sections">
+    <section class="wrap featured" aria-labelledby="featured-title">
+      <div class="featured-head">
+        <h2 class="section-title" id="featured-title">Selected work</h2>
+        <a class="btn" href="portfolio/index.html">See all the work</a>
+      </div>
+      <ul class="work-grid">
+        <li><a class="work-card" href="portfolio/index.html#fieldline">
+          <img src="images/home/fieldline.webp" srcset="images/home/fieldline@2x.webp 2x" width="480" height="300" loading="lazy" alt="Fieldline website concept home page.">
+          <span class="work-title">Fieldline website concept</span><span class="work-where">Web design</span>
+        </a></li>
+        <li><a class="work-card" href="portfolio/index.html#range-summary">
+          <img src="images/home/range.webp" srcset="images/home/range@2x.webp 2x" width="480" height="300" loading="lazy" alt="Range Summary window comparing three date ranges.">
+          <span class="work-title">Range Summary window</span><span class="work-where">Salient</span>
+        </a></li>
+        <li><a class="work-card" href="portfolio/index.html#social">
+          <img src="images/home/social.webp" srcset="images/home/social@2x.webp 2x" width="480" height="300" loading="lazy" alt="Elmira College YouTube, Facebook and Instagram pages.">
+          <span class="work-title">Social media from zero</span><span class="work-where">Elmira College</span>
+        </a></li>
+        <li><a class="work-card" href="portfolio/index.html#design-system">
+          <img src="images/home/patterns.webp" srcset="images/home/patterns@2x.webp 2x" width="480" height="300" loading="lazy" alt="Pattern guide color page.">
+          <span class="work-title">Design system</span><span class="work-where">Salient</span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section class="wrap home-doors" aria-label="More">
       <ul class="doors">
-        <li><a href="portfolio/index.html"><span class="door-name">Portfolio</span><span class="door-desc">Problems people had, and what I made to solve each one: product screens, a design system, a website redesign, and more.</span></a></li>
         <li><a href="tools/index.html"><span class="door-name">Tools</span><span class="door-desc">Free tools for artists and designers: Creative Spark, the Image Grid Tool and the Color Palette Maker.</span></a></li>
         <li><a href="resume/index.html"><span class="door-name">Resume</span><span class="door-desc">Experience, education and skills, with a PDF to download.</span></a></li>
       </ul>
     </section>
 
     <section class="wrap about" id="about" aria-labelledby="about-title">
-      <h2 class="section-title" id="about-title">About</h2>
+      <div class="about-side">
+        <h2 class="section-title" id="about-title">About</h2>
+        <img class="headshot" src="images/me/dan.webp" srcset="images/me/dan@2x.webp 2x" width="400" height="400" loading="lazy" alt="Dan Baroody">
+      </div>
       <div>
         <p>I live and work in Elmira, New York. Every job starts the same way: I listen until I understand the problem, then I make what solves it. Over the years that has been dashboards for analysts, a website for prospective students, ads on a newspaper deadline, and small tools of my own.</p>
         <p>I work in Figma and Adobe Creative Cloud, write HTML and CSS, and build my own tools when the right one doesn't exist.</p>
       </div>
+    </section>
+
+    <section class="wrap cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Hiring? Let's talk.</h2>
+      <p>I'm looking for my next role. The fastest way to reach me is email.</p>
+      <ul class="links">
+        <li><a class="btn btn-primary" href="mailto:dabaroody@gmail.com">Email me</a></li>
+        <li><a class="btn" href="resume/index.html">Read my resume</a></li>
+        <li><a class="btn" href="https://www.linkedin.com/in/danbaroody" target="_blank" rel="noopener">LinkedIn <svg class="btn-ico" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3L7 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+      </ul>
     </section>
   </main>
 

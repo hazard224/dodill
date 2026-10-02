@@ -1,0 +1,240 @@
+    <dialog class="case" id="m-range-window" aria-labelledby="m-range-window-title">
+      <div class="case-inner">
+        <header class="case-head">
+          <div>
+            <p class="case-where">Salient, product design</p>
+            <h2 id="m-range-window-title">Range Summary window</h2>
+          </div>
+          <button type="button" class="case-close" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-track" tabindex="0" aria-label="Screenshots">
+            <figure class="carousel-slide">
+              <img src="../images/range-window/before.webp" width="1217" height="786" loading="lazy" alt="Before: a trend chart with three separate small windows, one per selected date range, stacked on top of each other.">
+              <figcaption><strong>Before.</strong> Every range picked on the chart opened its own window. Three ranges meant three windows to drag around, with nothing on the chart showing which was which.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/range-window/after.webp" width="1228" height="810" loading="lazy" alt="After: the same chart with three shaded ranges and a single Range Summary window listing all three side by side.">
+              <figcaption><strong>After.</strong> One Range Summary window holds every range side by side, and each range is shaded on the chart while the window is open.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/range-window/differences.webp" width="1593" height="904" loading="lazy" alt="Range Summary with Show differences turned on: two blue difference columns, and the two cells behind a hovered difference highlighted in yellow.">
+              <figcaption><strong>Show differences.</strong> Turning it on adds later-minus-earlier comparisons in blue columns. Hovering a difference highlights the two cells it came from.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/range-window/year-over-year.webp" width="1266" height="523" loading="lazy" alt="Range Summary with This, Last and % Change rows for each measure, plus difference columns that show percentage changes in points.">
+              <figcaption><strong>Year over year.</strong> When each range has a comparison period, the window shows This, Last and % Change, and differences between percentages read in points.</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-prev aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="carousel-count" aria-live="polite"><span data-current>1</span> of <span data-total>4</span></span>
+            <button type="button" class="carousel-btn" data-next aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <section>
+            <h3>The problem</h3>
+            <p>Analysts pick date ranges on a trend chart to compare periods, like this fall against last winter. Each range opened its own floating window. Comparing three periods meant juggling three windows, reading numbers across them by eye, and doing the subtraction in your head. Windows could also stay open after their chart was gone.</p>
+          </section>
+          <section>
+            <h3>What I made</h3>
+            <ul>
+              <li>All ranges live in one window, with a Swap view option to flip rows and columns.</li>
+              <li>Selected ranges are shaded on the chart and update the moment one is added or removed.</li>
+              <li>Show differences adds later-minus-earlier comparisons. Any pair can be chosen, swapped or removed, shown as values, percent change, or both, grouped at the end or beside each range.</li>
+              <li>Differences read the way the source numbers do: same units, an up or down arrow, and percentage rows in points rather than a percent of a percent.</li>
+              <li>When two ranges have different lengths, Totals differences are greyed out because they mostly reflect the length. Averages stay normal.</li>
+              <li>Headers show readable dates, the comparison period and the range length, like "Dec 28, 1998 – Feb 21, 1999, 8 weeks".</li>
+              <li>Everything works from the keyboard, with screen-reader labels built from the dates and no switch animation when reduced motion is on.</li>
+              <li>The window closes with its chart every time, so no more orphaned windows.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="case" id="m-elmira-site" aria-labelledby="m-elmira-site-title">
+      <div class="case-inner">
+        <header class="case-head">
+          <div>
+            <p class="case-where">Elmira College, web design</p>
+            <h2 id="m-elmira-site-title">College website redesign</h2>
+          </div>
+          <button type="button" class="case-close" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-track" tabindex="0" aria-label="Screenshots">
+            <figure class="carousel-slide">
+              <img src="../images/elmira-site/home.webp" width="1160" height="1197" loading="lazy" alt="Elmira College home page: purple top bar with Request Info, Visit EC and Enroll Now, gold main navigation, a Summer Open House photo slider, and News, Events and Virtual Tour links below.">
+              <figcaption><strong>Home page.</strong> Calls to action sit at the top of every page. What's happening now, like open house dates, news and events, is right on the front page.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/elmira-site/mega-menu.webp" width="1020" height="1000" loading="lazy" alt="The Admissions and Aid menu open, showing six columns: Visit, Apply, Connect With Us, Tuition and Financial Aid, Entering Students, and Share in a Tradition.">
+              <figcaption><strong>Navigation.</strong> Each main section opens into a full menu grouped by what visitors are trying to do, so tours, applications, tuition and aid are one click from anywhere.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/elmira-site/events.webp" width="990" height="863" loading="lazy" alt="Presidential Lecture Series page with a breadcrumb trail, a left-hand list of event series, and event listings with photos, dates and locations.">
+              <figcaption><strong>Section pages.</strong> A breadcrumb trail and a section menu on the left keep visitors oriented, and events list the what, when and where up front.</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-prev aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="carousel-count" aria-live="polite"><span data-current>1</span> of <span data-total>3</span></span>
+            <button type="button" class="carousel-btn" data-next aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <section>
+            <h3>The problem</h3>
+            <p>Prospective students and their families came to the site with specific questions: how to visit, how to apply, what it costs. The answers were there, but they took too long to find, and the things that set the college apart were easy to miss.</p>
+          </section>
+          <section>
+            <h3>What I made</h3>
+            <ul>
+              <li>A new design built around ease of use, so visitors find what they came for in fewer clicks.</li>
+              <li>Menus grouped by what people are trying to do, like Visit, Apply, and Tuition and Financial Aid, instead of by how the college is organized.</li>
+              <li>Calls to action like Apply and Visit pinned to the top of every page.</li>
+              <li>Important parts of the college, like news, events, open houses and the virtual tour, given room on the home page.</li>
+              <li>A consistent page layout with breadcrumbs and section menus, so visitors always know where they are.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="case" id="m-fieldline" aria-labelledby="m-fieldline-title">
+      <div class="case-inner">
+        <header class="case-head">
+          <div>
+            <p class="case-where">Personal project, web design</p>
+            <h2 id="m-fieldline-title">Fieldline website concept</h2>
+          </div>
+          <button type="button" class="case-close" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-track" tabindex="0" aria-label="Screenshots">
+            <figure class="carousel-slide">
+              <img src="../images/concept-site/home-hero.webp" width="2880" height="1800" loading="lazy" alt="Fieldline home page hero: Every result has a reason, we make sure you find it, with three proof points below.">
+              <figcaption><strong>Home page.</strong> A bold headline with three proof points right under it, so the value is clear before the first scroll.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/concept-site/home-logos.webp" width="2880" height="1800" loading="lazy" alt="Fieldline home page further down: a section on performance visibility and a wall of partner logos.">
+              <figcaption><strong>Proof.</strong> A short point of view, then a wall of partner logos. Every logo here is a placeholder for a fictional customer.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/concept-site/retail@2x.webp" width="2880" height="1800" loading="lazy" alt="Retail, grocery and convenience industry page hero.">
+              <figcaption><strong>Industry pages.</strong> Each of the six industries gets its own page with a headline written for that audience.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/concept-site/how-we-work@2x.webp" width="2880" height="1800" loading="lazy" alt="How we work page hero.">
+              <figcaption><strong>How we work.</strong> The approach explained in plain language, without product jargon.</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-prev aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="carousel-count" aria-live="polite"><span data-current>1</span> of <span data-total>4</span></span>
+            <button type="button" class="carousel-btn" data-next aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <section>
+            <h3>The problem</h3>
+            <p>A software company sells to six very different industries, from grocery chains to beverage distributors to healthcare. One website has to make sense to all of them without turning into a generic brochure.</p>
+            <p class="case-actions"><a class="btn" href="https://hazard224.github.io/fieldline-concept/" target="_blank" rel="noopener">View the concept <svg class="btn-ico" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3L7 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+          </section>
+          <section>
+            <h3>What I made</h3>
+            <ul>
+              <li>15 pages: home, an industries overview, six industry pages, customers, how we work, about, careers, a resource guide, blog, events and contact.</li>
+              <li>A shared mega menu, header and footer generated from templates, so every page stays consistent and new pages are quick to add.</li>
+              <li>Industry pages that lead with each audience's own problem before talking about the product.</li>
+              <li>Hand-built in HTML, CSS and JavaScript with no framework, responsive down to phones.</li>
+              <li>Names, logos, people and figures are all placeholders for a fictional company.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="case" id="m-directory" aria-labelledby="m-directory-title">
+      <div class="case-inner">
+        <header class="case-head">
+          <div>
+            <p class="case-where">Salient, product design</p>
+            <h2 id="m-directory-title">Directory redesign</h2>
+          </div>
+          <button type="button" class="case-close" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-track" tabindex="0" aria-label="Screenshots">
+            <figure class="carousel-slide">
+              <img src="../images/directory/grid.webp" width="2532" height="1544" loading="lazy" alt="Directory dialog in grid view: search across the top, a folder tree on the left, and dashboard and bookmark cards.">
+              <figcaption><strong>Grid view.</strong> Search sits on top, folders on the left, and every dashboard and bookmark is a card with a short description.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/directory/detailed.webp" width="2532" height="1544" loading="lazy" alt="Directory dialog in detailed density, with tags on each card.">
+              <figcaption><strong>Detailed cards.</strong> A density switch lets people choose how much each card shows, from compact to detailed with tags.</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="../images/directory/list.webp" width="2532" height="1544" loading="lazy" alt="Directory dialog in list view with tags, type and date on each row.">
+              <figcaption><strong>List view.</strong> The same items as a scannable list for people who know what they are looking for.</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-prev aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="carousel-count" aria-live="polite"><span data-current>1</span> of <span data-total>3</span></span>
+            <button type="button" class="carousel-btn" data-next aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-body">
+          <section>
+            <h3>The problem</h3>
+            <p>Finding a dashboard meant knowing who saved it and which folder they used. Bookmarks and dashboards were mixed together, and there was no good way to search.</p>
+            <p class="case-actions"><a class="btn" href="../mockups/directory-redesign.html" target="_blank" rel="noopener">Try the interactive mockup <svg class="btn-ico" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3L7 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+          </section>
+          <section>
+            <h3>What I made</h3>
+            <ul>
+              <li>Search first, across names, tags and descriptions.</li>
+              <li>Filters to show everything, only dashboards or only bookmarks.</li>
+              <li>Recent, Favorites and Featured at the top of the folder tree.</li>
+              <li>Grid and list views, and three densities from compact to detailed.</li>
+              <li>A clickable mockup used to gather feedback from the team.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </dialog>

@@ -57,3 +57,18 @@
     document.querySelectorAll('details.fix').forEach(setup);
   });
 })();
+
+// Open the row named in the URL (portfolio/index.html#range-summary)
+document.addEventListener('DOMContentLoaded', function () {
+  function openFromHash() {
+    var id = decodeURIComponent((location.hash || '').slice(1));
+    if (!id) return;
+    var d = document.getElementById(id);
+    if (!d || !d.matches('details.fix')) return;
+    document.querySelectorAll('details.fix[open]').forEach(function (o) { if (o !== d) o.open = false; });
+    d.open = true;
+    d.scrollIntoView({ block: 'start' });
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+});
